@@ -36,10 +36,10 @@ function App() {
         </div>
         <StreamLayerLogin token={user.token} schema={user.schema} />
         <MastersStreamLayerSDKReact>
-            {({ enableSdk, disableSdk }) => (
+            {({ activateEventWithId, deactivate }) => (
               <div>
-                <button onClick={() => enableSdk('733')}>enable</button>
-                <button onClick={disableSdk}>disable</button>
+                <button onClick={() => activateEventWithId('733')}>enable</button>
+                <button onClick={deactivate}>disable</button>
               </div>
             )}
           </MastersStreamLayerSDKReact>
