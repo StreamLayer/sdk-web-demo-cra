@@ -1,10 +1,21 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   background: #F2F2F1;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .app-div {
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-around;
+}
+
+.app-container {
+  width: 324px;
   height: 660px;
 }
 
@@ -45,15 +56,11 @@
 }
 
 .auth-form {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  z-index: 1000;
+  background: white;
 }
 
 .points {
