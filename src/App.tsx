@@ -48,7 +48,7 @@ function App() {
             <input type="text" id="schema" name="schema" />
           </div>
           <div>
-            <button type="submit">submit</button>
+            <button type="submit">login</button>
           </div>
         </form>
       </div>
