@@ -5,8 +5,8 @@ import App from "./App";
 describe("App", () => {
   it("renders App component", async () => {
     render(<App />);
-    const enableButton = screen.getByText('enable');
+    const disableButton = screen.getByText('Close event');
 
-    expect(enableButton).toBeDefined();
+    expect(disableButton).toBeDefined();
   });
 });

@@ -29,7 +29,7 @@ function App() {
           <StreamLayerLogin token={user.token} schema={user.schema} />
           <MastersStreamLayerSDKReact>
               {({ activateEventWithId, deactivate }) => (
-                <div>
+                <div id="rendered-by-sdk">
                   <button onClick={() => activateEventWithId(EVENT_ID)}>Open event {EVENT_ID}</button>
                   <button onClick={deactivate}>Close event</button>
                 </div>
