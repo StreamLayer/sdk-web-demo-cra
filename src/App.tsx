@@ -6,6 +6,10 @@ const EVENT_ID = process.env.REACT_APP_EVENT_ID || ''
 const SDK_KEY = process.env.REACT_APP_SDK_KEY || ''
 const PRODUCTION = process.env.REACT_APP_PRODUCTION === 'true'
 
+const cb = () => {
+  // enable FG+
+}
+
 function App() {
   const [user, setUser] = useState({ token: '', schema: '' })
 
@@ -22,7 +26,7 @@ function App() {
   return (
     <div className='app-div'>
       <div className='app-container'>
-        <MastersStreamLayerProvider sdkKey={SDK_KEY} production={PRODUCTION}>
+        <MastersStreamLayerProvider sdkKey={SDK_KEY} production={PRODUCTION} onDeepLinkHandled={cb}>
           <div className='points'>
             <StreamLayerSDKPoints />
           </div>
