@@ -6,7 +6,16 @@ const EVENT_ID = process.env.REACT_APP_EVENT_ID || ''
 const SDK_KEY = process.env.REACT_APP_SDK_KEY || ''
 const PRODUCTION = process.env.REACT_APP_PRODUCTION === 'true'
 
-const cb = () => {
+type DeepLinkUrlParams = {
+  // StreamLayer user id
+  sldl_uid?: string
+  // StreamLayer event id
+  sldl_eid?: string
+  // Masters event id
+  sldl_e_eid?: string
+}
+
+const cb = ({ sldl_uid, sldl_eid, sldl_e_eid }: DeepLinkUrlParams) => {
   // enable FG+
 }
 
