@@ -19,6 +19,20 @@ const cb = ({ sldl_uid, sldl_eid, sldl_e_eid }: DeepLinkUrlParams) => {
   // enable FG+
 }
 
+type VideoPlayerData = {
+  muted: boolean
+}
+
+const toggleVideoVolume = ({ muted }: VideoPlayerData) => {
+  const player = document.getElementsByTagName('video')[0] as HTMLVideoElement
+
+  if (muted) {
+    player.volume = 0
+  } else {
+    player.volume = 1
+  }
+}
+
 function App() {
   const [user, setUser] = useState({ token: '', schema: '' })
 
@@ -35,7 +49,7 @@ function App() {
   return (
     <div className='app-div'>
       <div className='app-container'>
-        <MastersStreamLayerProvider sdkKey={SDK_KEY} production={PRODUCTION} onDeepLinkHandled={cb}>
+        <MastersStreamLayerProvider sdkKey={SDK_KEY} production={PRODUCTION} onDeepLinkHandled={cb} videoPlayerController={toggleVideoVolume}>
           <div className='points'>
             <StreamLayerSDKPoints />
           </div>
