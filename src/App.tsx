@@ -16,6 +16,7 @@ type DeepLinkUrlParams = {
 }
 
 const cb = ({ sldl_uid, sldl_eid, sldl_e_eid }: DeepLinkUrlParams) => {
+  console.log('DeepLinkUrlParams', { sldl_uid, sldl_eid, sldl_e_eid })
   // enable FG+
 }
 
@@ -24,6 +25,7 @@ type VideoPlayerData = {
 }
 
 const toggleVideoVolume = ({ muted }: VideoPlayerData) => {
+  console.log('ToggleVideoVolume', muted)
   const player = document.getElementsByTagName('video')[0] as HTMLVideoElement
 
   if (muted) {
