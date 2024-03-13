@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@streamlayer/react':
-    specifier: ^0.41.1
-    version: 0.41.1(@bufbuild/protobuf@1.7.2)(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@fastify/deepmerge@1.3.0)(@lottiefiles/react-lottie-player@3.5.3)(@nanostores/query@0.2.10)(@nanostores/react@0.7.2)(@streamlayer/sl-eslib@5.83.1)(@types/lodash.throttle@4.1.9)(lodash.throttle@4.1.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0)(react-auth-code-input@3.2.1)(react-countdown-circle-timer@3.2.1)(react-countup@6.5.0)(react-infinite-scroller@1.2.6)(react-phone-number-input@3.3.9)
+    specifier: ^0.41.2
+    version: 0.41.2(@bufbuild/protobuf@1.7.2)(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@fastify/deepmerge@1.3.0)(@lottiefiles/react-lottie-player@3.5.3)(@nanostores/query@0.2.10)(@nanostores/react@0.7.2)(@streamlayer/sl-eslib@5.83.1)(@types/lodash.throttle@4.1.9)(lodash.throttle@4.1.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0)(react-auth-code-input@3.2.1)(react-countdown-circle-timer@3.2.1)(react-countup@6.5.0)(react-infinite-scroller@1.2.6)(react-phone-number-input@3.3.9)
   '@testing-library/jest-dom':
     specifier: ^5.17.0
     version: 5.17.0
@@ -2369,13 +2369,13 @@ packages:
       '@sinonjs/commons': 1.8.6
     dev: false
 
-  /@streamlayer/feature-gamification@0.39.0(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0):
-    resolution: {integrity: sha512-wY8fZ3aAwE2u4DgS22IrWYwmUSIriG2ceyoaD20bfQ+fVV0NtHbbk5k5k4LcPMG/bRhlI/KqSGb4+3SF7P71uw==}
+  /@streamlayer/feature-gamification@0.39.1(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0):
+    resolution: {integrity: sha512-hUmB7g+u6Z2G05P+MieHiv+u59+mP4Pfq9BjMvqM7ZO3AAHOaSFV9U2M/vMQJlCtcMOgEynw9IDSL0EdopHVuA==}
     peerDependencies:
       '@bufbuild/protobuf': ^1.7.2
       '@fastify/deepmerge': ^1.3.0
-      '@streamlayer/sdk-web-api': ^0.24.0
-      '@streamlayer/sdk-web-core': ^0.22.0
+      '@streamlayer/sdk-web-api': ^0.24.1
+      '@streamlayer/sdk-web-core': ^0.22.1
       '@streamlayer/sdk-web-interfaces': ^0.21.0
       '@streamlayer/sdk-web-logger': ^0.5.18
       '@streamlayer/sdk-web-notifications': ^0.15.0
@@ -2386,8 +2386,8 @@ packages:
     dependencies:
       '@bufbuild/protobuf': 1.7.2
       '@fastify/deepmerge': 1.3.0
-      '@streamlayer/sdk-web-api': 0.24.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
-      '@streamlayer/sdk-web-core': 0.22.0(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
+      '@streamlayer/sdk-web-api': 0.24.1(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
+      '@streamlayer/sdk-web-core': 0.22.1(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
       '@streamlayer/sdk-web-interfaces': 0.21.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)
       '@streamlayer/sdk-web-logger': 0.5.18(pino@8.19.0)
       '@streamlayer/sdk-web-notifications': 0.15.0(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)
@@ -2397,8 +2397,8 @@ packages:
       nanostores: 0.10.0
     dev: false
 
-  /@streamlayer/react@0.41.1(@bufbuild/protobuf@1.7.2)(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@fastify/deepmerge@1.3.0)(@lottiefiles/react-lottie-player@3.5.3)(@nanostores/query@0.2.10)(@nanostores/react@0.7.2)(@streamlayer/sl-eslib@5.83.1)(@types/lodash.throttle@4.1.9)(lodash.throttle@4.1.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0)(react-auth-code-input@3.2.1)(react-countdown-circle-timer@3.2.1)(react-countup@6.5.0)(react-infinite-scroller@1.2.6)(react-phone-number-input@3.3.9):
-    resolution: {integrity: sha512-JJN66bI76CAisGbhB5ga7/wheErDGZnaCQ3vgc9dd+iPw90HjJe9nW48Hg8kAVaoe1E16G1X3F5ki6/E7vVEOw==}
+  /@streamlayer/react@0.41.2(@bufbuild/protobuf@1.7.2)(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@fastify/deepmerge@1.3.0)(@lottiefiles/react-lottie-player@3.5.3)(@nanostores/query@0.2.10)(@nanostores/react@0.7.2)(@streamlayer/sl-eslib@5.83.1)(@types/lodash.throttle@4.1.9)(lodash.throttle@4.1.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0)(react-auth-code-input@3.2.1)(react-countdown-circle-timer@3.2.1)(react-countup@6.5.0)(react-infinite-scroller@1.2.6)(react-phone-number-input@3.3.9):
+    resolution: {integrity: sha512-1nV3wfYf6KumrbqBVfvxMzoqLLqP9o/bXGcKc79+MCN19R8kFxeXmHhInD6Vdndqb+xY10wwMrebDakaSNGjfw==}
     peerDependencies:
       '@bufbuild/protobuf': ^1.7.2
       '@connectrpc/connect': ^1.3.0
@@ -2425,12 +2425,12 @@ packages:
       '@lottiefiles/react-lottie-player': 3.5.3(react@18.2.0)
       '@nanostores/query': 0.2.10(nanostores@0.10.0)
       '@nanostores/react': 0.7.2(nanostores@0.10.0)(react@18.2.0)
-      '@streamlayer/feature-gamification': 0.39.0(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
-      '@streamlayer/sdk-web': 0.33.0(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@nanostores/query@0.2.10)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0)
-      '@streamlayer/sdk-web-analytics': 0.1.0(@bufbuild/protobuf@1.7.2)(@connectrpc/connect@1.4.0)(@streamlayer/feature-gamification@0.39.0)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-features@0.11.24)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7)
-      '@streamlayer/sdk-web-api': 0.24.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
-      '@streamlayer/sdk-web-core': 0.22.0(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
-      '@streamlayer/sdk-web-features': 0.11.24(@streamlayer/feature-gamification@0.39.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-types@0.23.0)
+      '@streamlayer/feature-gamification': 0.39.1(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
+      '@streamlayer/sdk-web': 0.33.1(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@nanostores/query@0.2.10)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0)
+      '@streamlayer/sdk-web-analytics': 0.1.1(@bufbuild/protobuf@1.7.2)(@connectrpc/connect@1.4.0)(@streamlayer/feature-gamification@0.39.1)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-features@0.11.25)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7)
+      '@streamlayer/sdk-web-api': 0.24.1(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
+      '@streamlayer/sdk-web-core': 0.22.1(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
+      '@streamlayer/sdk-web-features': 0.11.25(@streamlayer/feature-gamification@0.39.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-types@0.23.0)
       '@streamlayer/sdk-web-interfaces': 0.21.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)
       '@streamlayer/sdk-web-logger': 0.5.18(pino@8.19.0)
       '@streamlayer/sdk-web-notifications': 0.15.0(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)
@@ -2450,15 +2450,15 @@ packages:
       - '@streamlayer/sl-eslib'
     dev: false
 
-  /@streamlayer/sdk-web-analytics@0.1.0(@bufbuild/protobuf@1.7.2)(@connectrpc/connect@1.4.0)(@streamlayer/feature-gamification@0.39.0)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-features@0.11.24)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7):
-    resolution: {integrity: sha512-AHNlQKmHUyFNzIWfVeQWmYlMbATu3eFdfRg/UFRvx27kW3dpzeYQi2ceENnrL//1Z9uT1RwzsFWQlLZU/OgdMQ==}
+  /@streamlayer/sdk-web-analytics@0.1.1(@bufbuild/protobuf@1.7.2)(@connectrpc/connect@1.4.0)(@streamlayer/feature-gamification@0.39.1)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-features@0.11.25)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7):
+    resolution: {integrity: sha512-gVRb5LxClV8KJkJP9J/ECdQLUX4QjjkNxG4houJHiSSoavUY5UL5M0mMVIBMFkrieBqI/cR2eqA/cOseL31y+A==}
     peerDependencies:
       '@bufbuild/protobuf': ^1.7.2
       '@connectrpc/connect': ^1.3.0
-      '@streamlayer/feature-gamification': ^0.39.0
-      '@streamlayer/sdk-web-api': ^0.24.0
-      '@streamlayer/sdk-web-core': ^0.22.0
-      '@streamlayer/sdk-web-features': ^0.11.24
+      '@streamlayer/feature-gamification': ^0.39.1
+      '@streamlayer/sdk-web-api': ^0.24.1
+      '@streamlayer/sdk-web-core': ^0.22.1
+      '@streamlayer/sdk-web-features': ^0.11.25
       '@streamlayer/sdk-web-interfaces': ^0.21.0
       '@streamlayer/sdk-web-logger': ^0.5.18
       '@streamlayer/sl-eslib': ^5.83.1
@@ -2466,18 +2466,18 @@ packages:
     dependencies:
       '@bufbuild/protobuf': 1.7.2
       '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.7.2)
-      '@streamlayer/feature-gamification': 0.39.0(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
-      '@streamlayer/sdk-web-api': 0.24.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
-      '@streamlayer/sdk-web-core': 0.22.0(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
-      '@streamlayer/sdk-web-features': 0.11.24(@streamlayer/feature-gamification@0.39.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-types@0.23.0)
+      '@streamlayer/feature-gamification': 0.39.1(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
+      '@streamlayer/sdk-web-api': 0.24.1(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
+      '@streamlayer/sdk-web-core': 0.22.1(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
+      '@streamlayer/sdk-web-features': 0.11.25(@streamlayer/feature-gamification@0.39.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-types@0.23.0)
       '@streamlayer/sdk-web-interfaces': 0.21.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)
       '@streamlayer/sdk-web-logger': 0.5.18(pino@8.19.0)
       '@streamlayer/sl-eslib': 5.83.1(@tanstack/react-query@4.36.1)(react-dom@18.2.0)(react@18.2.0)
       nanoid: 3.3.7
     dev: false
 
-  /@streamlayer/sdk-web-api@0.24.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0):
-    resolution: {integrity: sha512-+5cjCLtOZMa+p2zLzHy0foUd41fYDR+XnWT9OWay6dGXeei8QFEXlC7aTCyMh9xcFJMq8ovubwgfa7JVmQ6Z1w==}
+  /@streamlayer/sdk-web-api@0.24.1(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0):
+    resolution: {integrity: sha512-M8GC3k2wLMMHoXKVGHQALxrmyzE9FTEtz7CXaS195AjcB0mc64RI7DlM4JmpAccy39+I2uQQ4FWY8u/cVPBJGw==}
     dependencies:
       '@streamlayer/sdk-web-interfaces': 0.21.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)
       '@streamlayer/sdk-web-logger': 0.5.18(pino@8.19.0)
@@ -2489,11 +2489,11 @@ packages:
       - pino
     dev: false
 
-  /@streamlayer/sdk-web-core@0.22.0(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0):
-    resolution: {integrity: sha512-uBbrJl1OnczKMsPV+VuWvLJpYkRmBuaPNgzyWGWeMOVifozhpkMuZ+E8qilxoXv5qk5aD1/GGMGU2IYWMZLjsg==}
+  /@streamlayer/sdk-web-core@0.22.1(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0):
+    resolution: {integrity: sha512-EI59lQNEn3hv9W3sfmGLOA9SmimhCz+IcdSz4NXkmoTYix3GEgpyDr3FA72kYlXiWcs6CsrhfnnqJTRyg7DVQA==}
     peerDependencies:
       '@nanostores/query': ^0.2.10
-      '@streamlayer/sdk-web-api': ^0.24.0
+      '@streamlayer/sdk-web-api': ^0.24.1
       '@streamlayer/sdk-web-interfaces': ^0.21.0
       '@streamlayer/sdk-web-logger': ^0.5.18
       '@streamlayer/sdk-web-storage': ^0.4.5
@@ -2502,7 +2502,7 @@ packages:
       nanostores: ^0.10.0
     dependencies:
       '@nanostores/query': 0.2.10(nanostores@0.10.0)
-      '@streamlayer/sdk-web-api': 0.24.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
+      '@streamlayer/sdk-web-api': 0.24.1(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)(pino@8.19.0)
       '@streamlayer/sdk-web-interfaces': 0.21.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)
       '@streamlayer/sdk-web-logger': 0.5.18(pino@8.19.0)
       '@streamlayer/sdk-web-storage': 0.4.5
@@ -2511,16 +2511,16 @@ packages:
       nanostores: 0.10.0
     dev: false
 
-  /@streamlayer/sdk-web-features@0.11.24(@streamlayer/feature-gamification@0.39.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-types@0.23.0):
-    resolution: {integrity: sha512-qU3LG+IDKoO038ahUT8QcWm3ikhr1y3F6mNksNMd9j09VEtEv3j3N2FdH7dMfb6Q1c6msq0N3yuJXbHkosOf7g==}
+  /@streamlayer/sdk-web-features@0.11.25(@streamlayer/feature-gamification@0.39.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-types@0.23.0):
+    resolution: {integrity: sha512-r1xhsAXoCWZ+xSphj0Zsn2SHQBCon9/pljQU5P6EoXMTa5fqbcNMrpAnolHErc2Ig9bDs5mVhd2Ki+LGq0BFqw==}
     peerDependencies:
-      '@streamlayer/feature-gamification': ^0.39.0
-      '@streamlayer/sdk-web-core': ^0.22.0
+      '@streamlayer/feature-gamification': ^0.39.1
+      '@streamlayer/sdk-web-core': ^0.22.1
       '@streamlayer/sdk-web-interfaces': ^0.21.0
       '@streamlayer/sdk-web-types': ^0.23.0
     dependencies:
-      '@streamlayer/feature-gamification': 0.39.0(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-core@0.22.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
-      '@streamlayer/sdk-web-core': 0.22.0(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.0)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
+      '@streamlayer/feature-gamification': 0.39.1(@bufbuild/protobuf@1.7.2)(@fastify/deepmerge@1.3.0)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-core@0.22.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-notifications@0.15.0)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
+      '@streamlayer/sdk-web-core': 0.22.1(@nanostores/query@0.2.10)(@streamlayer/sdk-web-api@0.24.1)(@streamlayer/sdk-web-interfaces@0.21.0)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-storage@0.4.5)(@streamlayer/sdk-web-types@0.23.0)(@streamlayer/sl-eslib@5.83.1)(nanostores@0.10.0)
       '@streamlayer/sdk-web-interfaces': 0.21.0(@bufbuild/protobuf@1.7.2)(@nanostores/query@0.2.10)(@streamlayer/sdk-web-logger@0.5.18)(@streamlayer/sdk-web-types@0.23.0)(nanostores@0.10.0)
       '@streamlayer/sdk-web-types': 0.23.0(@bufbuild/protobuf@1.7.2)(@streamlayer/sl-eslib@5.83.1)
     dev: false
@@ -2577,8 +2577,8 @@ packages:
       '@streamlayer/sl-eslib': 5.83.1(@tanstack/react-query@4.36.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /@streamlayer/sdk-web@0.33.0(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@nanostores/query@0.2.10)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0):
-    resolution: {integrity: sha512-tpfuh1SQvwy5xy6FlanOWEDK4l29BsKK/RMIQGUr0e8MasPf21gqnZilFPHOtJSmnbgcJgkUbXm0Psqnc/J6fg==}
+  /@streamlayer/sdk-web@0.33.1(@connectrpc/connect-web@1.4.0)(@connectrpc/connect@1.4.0)(@nanostores/query@0.2.10)(@streamlayer/sl-eslib@5.83.1)(nanoid@3.3.7)(nanostores@0.10.0)(pino@8.19.0):
+    resolution: {integrity: sha512-+CWkLau8miZRiu5e/5kXXbSIoysd9Fu9xXP1/nWXPhzaBWMNbiTAlSbyiuyn1iwOoaUYB+7i7SiOmY/xxjLLbw==}
     peerDependencies:
       '@connectrpc/connect': ^1.3.0
       '@connectrpc/connect-web': ^1.3.0
@@ -2984,11 +2984,11 @@ packages:
   /@types/lodash.throttle@4.1.9:
     resolution: {integrity: sha512-PCPVfpfueguWZQB7pJQK890F2scYKoDUL3iM522AptHWn7d5NQmeS/LTEHIcLr5PaTzl3dK2Z0xSUHHTHwaL5g==}
     dependencies:
-      '@types/lodash': 4.14.202
+      '@types/lodash': 4.17.0
     dev: false
 
-  /@types/lodash@4.14.202:
-    resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+  /@types/lodash@4.17.0:
+    resolution: {integrity: sha512-t7dhREVv6dbNj0q17X12j7yDG4bD/DHYX7o5/DbDxobP0HnGPgpRz2Ej77aL7TZT3DSw13fqUTj8J4mMnqa7WA==}
     dev: false
 
   /@types/mime@1.3.3:
@@ -7428,8 +7428,8 @@ packages:
       type-check: 0.4.0
     dev: false
 
-  /libphonenumber-js@1.10.57:
-    resolution: {integrity: sha512-OjsEd9y4LgcX+Ig09SbxWqcGESxliDDFNVepFhB9KEsQZTrnk3UdEU+cO0sW1APvLprHstQpS23OQpZ3bwxy6Q==}
+  /libphonenumber-js@1.10.58:
+    resolution: {integrity: sha512-53A0IpJFL9LdHbpeatwizf8KSwPICrqn9H0g3Y7WQ+Jgeu9cQ4Ew3WrRtrLBu/CX2lXd5+rgT01/tGlkbkzOjw==}
     dev: false
 
   /lilconfig@2.1.0:
@@ -9201,7 +9201,7 @@ packages:
       classnames: 2.5.1
       country-flag-icons: 1.5.9
       input-format: 0.3.9
-      libphonenumber-js: 1.10.57
+      libphonenumber-js: 1.10.58
       prop-types: 15.8.1
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
