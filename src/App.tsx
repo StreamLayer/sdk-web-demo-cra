@@ -1,22 +1,15 @@
 import { useState } from 'react'
-import { StreamLayerLogin, MastersStreamLayerProvider, MastersStreamLayerSDKReact, StreamLayerSDKPoints } from '@streamlayer/react/masters'
+import { StreamLayerProvider, DeepLinkCallback, VideoPlayerCallback, StreamLayerSDKReact } from '@streamlayer/react'
+import { StreamLayerSDKPoints } from '@streamlayer/react/points'
+import { StreamLayerLogin } from '@streamlayer/react/auth'
 import '@streamlayer/react/style.css'
 
 const EVENT_ID = process.env.REACT_APP_EVENT_ID || ''
 const SDK_KEY = process.env.REACT_APP_SDK_KEY || ''
 const PRODUCTION = process.env.REACT_APP_PRODUCTION === 'true'
 
-type DeepLinkUrlParams = {
-  // StreamLayer user id
-  sldl_uid?: string
-  // StreamLayer event id
-  sldl_eid?: string
-  // Masters event id
-  sldl_e_eid?: string
-}
-
-const cb = ({ sldl_uid, sldl_eid, sldl_e_eid }: DeepLinkUrlParams) => {
-  console.log('DeepLinkUrlParams', { sldl_uid, sldl_eid, sldl_e_eid })
+const cb: DeepLinkCallback = (params) => {
+  console.log('DeepLinkUrlParams', params)
   // enable FG+
 }
 
@@ -24,7 +17,7 @@ type VideoPlayerData = {
   muted: boolean
 }
 
-const toggleVideoVolume = ({ muted }: VideoPlayerData) => {
+const toggleVideoVolume: VideoPlayerCallback = ({ muted }: VideoPlayerData) => {
   console.log('ToggleVideoVolume', muted)
   const player = document.getElementsByTagName('video')[0] as HTMLVideoElement
 
@@ -36,6 +29,7 @@ const toggleVideoVolume = ({ muted }: VideoPlayerData) => {
 }
 
 function App() {
+  const [event, setEventId] = useState('')
   const [user, setUser] = useState({ token: '', schema: '' })
 
   const submitUser = (e: React.FormEvent<HTMLFormElement>) => {
@@ -48,23 +42,25 @@ function App() {
     setUser({ token, schema })
   }
 
+  const activateEvent = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const data = new FormData(e.currentTarget)
+
+    const event = data.get('event') as string
+
+    setEventId(event)
+  }
+
   return (
     <div className='app-div'>
       <div className='app-container'>
-        <MastersStreamLayerProvider sdkKey={SDK_KEY} production={PRODUCTION} onDeepLinkHandled={cb} videoPlayerController={toggleVideoVolume}>
+        <StreamLayerProvider sdkKey={SDK_KEY} production={PRODUCTION} onDeepLinkHandled={cb} videoPlayerController={toggleVideoVolume}>
           <div className='points'>
             <StreamLayerSDKPoints />
           </div>
           <StreamLayerLogin token={user.token} schema={user.schema} />
-          <MastersStreamLayerSDKReact>
-              {({ activateEventWithId, deactivate }) => (
-                <div id="rendered-by-sdk">
-                  <button onClick={() => activateEventWithId(EVENT_ID)}>Open event {EVENT_ID}</button>
-                  <button onClick={deactivate}>Close event</button>
-                </div>
-              )}
-            </MastersStreamLayerSDKReact>
-        </MastersStreamLayerProvider>
+          <StreamLayerSDKReact event={event} />
+        </StreamLayerProvider>
       </div>
       <div className='settings'>
         <form className='auth-form' onSubmit={submitUser}>
@@ -78,6 +74,15 @@ function App() {
           </div>
           <div>
             <button type="submit">login</button>
+          </div>
+        </form>
+        <form className='auth-form' onSubmit={activateEvent}>
+          <div>
+            <label htmlFor="event">event</label>
+            <input type="text" id="event" name="event" defaultValue={EVENT_ID} />
+          </div>
+          <div>
+            <button type="submit">activate</button>
           </div>
         </form>
       </div>

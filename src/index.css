@@ -17,6 +17,7 @@ body {
 .app-container {
   width: 324px;
   height: 660px;
+  overflow: hidden;
 }
 
 .logo {
