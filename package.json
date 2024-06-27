@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@streamlayer/react": "^0.41.4",
+    "@streamlayer/react": "^1.0.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
@@ -22,6 +22,8 @@
   "jest": {
     "moduleNameMapper": {
       "@streamlayer/react/style.css": "<rootDir>/node_modules/@streamlayer/react/lib/style.css",
+      "@streamlayer/react/points": "<rootDir>/node_modules/@streamlayer/react/lib/cjs/points.js",
+      "@streamlayer/react/auth": "<rootDir>/node_modules/@streamlayer/react/lib/cjs/auth.js",
       "@streamlayer/react/masters": "<rootDir>/node_modules/@streamlayer/react/lib/dist/cjs/index.js"
     }
   },
