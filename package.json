@@ -23,8 +23,7 @@
     "moduleNameMapper": {
       "@streamlayer/react/style.css": "<rootDir>/node_modules/@streamlayer/react/lib/style.css",
       "@streamlayer/react/points": "<rootDir>/node_modules/@streamlayer/react/lib/cjs/points.js",
-      "@streamlayer/react/auth": "<rootDir>/node_modules/@streamlayer/react/lib/cjs/auth.js",
-      "@streamlayer/react/masters": "<rootDir>/node_modules/@streamlayer/react/lib/dist/cjs/index.js"
+      "@streamlayer/react/auth": "<rootDir>/node_modules/@streamlayer/react/lib/cjs/auth.js"
     }
   },
   "scripts": {
@@ -32,12 +31,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -55,5 +48,6 @@
     "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
     "intersection-observer": "^0.12.2"
-  }
+  },
+  "packageManager": "pnpm@10.5.2"
 }
