@@ -6,6 +6,14 @@ import '@testing-library/jest-dom';
 import * as dotenv from 'dotenv';
 import crypto from "crypto";
 
+import { TextEncoder, TextDecoder } from 'util';
+
+// Polyfill the global scope with these constructors
+// @ts-ignore
+global.TextEncoder = TextEncoder;
+// @ts-ignore
+global.TextDecoder = TextDecoder;
+
 Object.defineProperty(global.self, "crypto", {
   value: crypto,
 });
